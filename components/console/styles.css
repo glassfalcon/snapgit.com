@@ -1,0 +1,55 @@
+.dConsole {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  padding: 36px 20px;
+  opacity: 0.6;
+  background-color: rgba(9, 22, 41, 0.82);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 100%;
+    background: #3b4779;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.63);
+    box-shadow: 13px 0 0 rgba(255, 255, 255, 0.4), 26px 0 0 rgba(255, 255, 255, 0.2);
+  }
+
+  & .content {
+    color: #e0f3ff;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 35px;
+  }
+
+  & .copy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 3px 6px;
+    color: white;
+    font-size: 12px;
+    line-height: normal;
+    background: rgba(0, 0, 0, 0.4);
+    appearance: none;
+    border: none;
+
+    & .icon {
+      margin-right: 4px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: 
+    linear-gradient(
+      to right, 
+      black 0%,
+      rgba(30, 51, 111, 0.3) 30%, 
+      rgba(145, 91, 97, 0.3) 70%,
+      black 100%
+    ), linear-gradient(
+      to bottom, 
+      black 0%,
+      rgba(145, 94, 49, 0.3) 30%, 
+      rgba(76, 59, 143, 0.3) 70%,
+      black 100%
+    );
+
+  & * {
+    box-sizing: border-box;
+  }
+}
+
+a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+  transition: color 125ms ease-in;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 850px;
+
+  & .copyright {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 10px;
+    color: #30688b;
+    opacity: 0.4;
+
+    &::before {
+      content: "\00a9 ";
+    }
+  }
+}

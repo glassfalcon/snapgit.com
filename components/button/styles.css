@@ -1,0 +1,15 @@
+.dButton {
+  display: inline-block;
+  padding: 3px 10px;
+  font-weight: 100;
+  background-color: rgba(8, 22, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: #e0f3ff;
+  font-size: 16px;
+  appearance: none;
+  transition: background-color 125ms ease-in;
+
+  &:hover {
+    background-color: #293a6b;
+  }
+}
