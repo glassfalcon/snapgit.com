@@ -1,15 +1,25 @@
 .dButton {
   display: inline-block;
-  padding: 3px 10px;
+  padding: 0.1875em 0.625em;
   font-weight: 100;
   background-color: rgba(8, 22, 30, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.42);
-  color: #e0f3ff;
+  color: #E0F3FF;
   font-size: 16px;
+  line-height: 1.75;
   appearance: none;
   transition: background-color 125ms ease-in;
+  cursor: pointer;
 
   &:hover {
-    background-color: #293a6b;
+    background-color: #293A6B;
+  }
+
+  & > :global(.fa):first-child:not(:last-child) {
+    margin-right: 0.625em;
+  }
+
+  & > :global(.fa):last-child:not(:first-child) {
+    margin-left: 0.625em;
   }
 }

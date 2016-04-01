@@ -2,8 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
 import { prefixLink } from 'gatsby-helpers';
 import { TypographyStyle, GoogleFont } from 'components/typography';
-import { config } from 'config';
-
 
 export default class Site extends Component {
   static propTypes = {
@@ -36,7 +34,7 @@ export default class Site extends Component {
             content="width=device-width, initial-scale=1.0 maximum-scale=1.0"
           />
           <title>{title}</title>
-          <link rel="shortcut icon" href={prefixLink(config.favicon)} />
+          <link rel="shortcut icon" href={prefixLink('/favicon.ico')} />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
           <GoogleFont />
           <TypographyStyle />

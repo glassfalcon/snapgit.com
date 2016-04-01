@@ -6,15 +6,6 @@
   background-repeat: no-repeat;
 
   &.felix {
-    background-image: url('./felix.svg');
     background-position: 10px 0;
-  }
-
-  &.david {
-    background-image: url('./david.svg');
-  }
-
-  &.patrick {
-    background-image: url('./patrick.svg');
   }
 }

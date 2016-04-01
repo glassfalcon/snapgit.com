@@ -63,7 +63,7 @@ export default class Index extends Component {
 
   render() {
     return (
-      <DocumentTitle title="Home">
+      <DocumentTitle title="The most powerful way to share your commits">
         <div className={css.home}>
           <Logo />
           <h2 className={css.headline}>
@@ -86,7 +86,7 @@ export default class Index extends Component {
           <div className={css.fork}>
             <a href="https://github.com/snapgit/snapgit">
               <Button>
-                <Icon style={{ marginRight: '10px' }} name="github" />
+                <Icon name="github" />
                 Fork on GitHub
               </Button>
             </a>
