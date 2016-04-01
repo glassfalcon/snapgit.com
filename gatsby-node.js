@@ -2,11 +2,6 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 exports.modifyWebpackConfig = function (config, env) {
-  config.loader('fonts', {
-    test: /\.(otf|eot|svg|ttf|woff|woff2|jpg)(\?.+)$/,
-    loader: 'url-loader?limit=8192'
-  });
-
   config.removeLoader('jpg');
 
   config.loader('jpg', {
