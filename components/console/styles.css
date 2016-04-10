@@ -14,7 +14,7 @@
     left: 0;
     height: 16px;
     width: 100%;
-    background: #3b4779;
+    background: #3B4779;
   }
 
   &::after {
@@ -30,7 +30,7 @@
   }
 
   & .content {
-    color: #e0f3ff;
+    color: #E0F3FF;
     font-family: monospace;
     font-size: 14px;
     line-height: 35px;
@@ -40,16 +40,9 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 3px 6px;
-    color: white;
     font-size: 12px;
-    line-height: normal;
-    background: rgba(0, 0, 0, 0.4);
-    appearance: none;
+    font-weight: 500;
+    background: transparent;
     border: none;
-
-    & .icon {
-      margin-right: 4px;
-    }
   }
 }

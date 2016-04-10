@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Icon from 'react-fontawesome';
+import { Link } from 'react-router';
 
 import {
   Button,
@@ -14,12 +15,12 @@ export default class Missing extends Component {
       <DocumentTitle title="Not Found">
         <div className={css.notFound}>
           <h1>Page not found!</h1>
-          <a href="/" title="Back Home">
+          <Link to="/" title="Back Home">
             <Button>
-              <Icon style={{ marginRight: '10px' }} name="home" />
+              <Icon name="home" />
               Back home
             </Button>
-          </a>
+          </Link>
         </div>
       </DocumentTitle>
     );

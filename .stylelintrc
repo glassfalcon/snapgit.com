@@ -1,0 +1,10 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "color-hex-case": "upper"
+  },
+  "ignoreFiles": [
+    "public/**.css",
+    "node_modules/**/**.css"
+  ]
+}

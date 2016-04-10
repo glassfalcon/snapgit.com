@@ -1,11 +1,41 @@
-.st0{fill:#EDF339;} 
-.st1{fill:#FFFFFF;} 
-.st2{fill:#0064DB;} 
-.st3{fill:#009797;} 
-.st4{fill:#4D9EFF;} 
-.st5{fill:#005856;} 
-.st6{fill:#8ED122;} 
-.st7{fill:#F6911B;} 
-.st8{opacity:0.16;fill:#FFFFFF;} 
-.st9{opacity:0.33;fill:#FFFFFF;}
-    
+.st0 {
+  fill: #EDF339;
+}
+
+.st1 {
+  fill: #FFF;
+}
+
+.st2 {
+  fill: #0064DB;
+}
+
+.st3 {
+  fill: #009797;
+}
+
+.st4 {
+  fill: #4D9EFF;
+}
+
+.st5 {
+  fill: #005856;
+}
+
+.st6 {
+  fill: #8ED122;
+}
+
+.st7 {
+  fill: #F6911B;
+}
+
+.st8 {
+  opacity: 0.16;
+  fill: #FFF;
+}
+
+.st9 {
+  opacity: 0.33;
+  fill: #FFF;
+}

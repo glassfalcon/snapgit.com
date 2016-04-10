@@ -1,3 +1,7 @@
+:global * {
+  box-sizing: border-box;
+}
+
 html {
   min-height: 100%;
 }
@@ -7,24 +11,21 @@ body {
   background-color: black;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: 
+  background-image:
     linear-gradient(
-      to right, 
+      to right,
       black 0%,
-      rgba(30, 51, 111, 0.3) 30%, 
+      rgba(30, 51, 111, 0.3) 30%,
       rgba(145, 91, 97, 0.3) 70%,
       black 100%
-    ), linear-gradient(
-      to bottom, 
+    ),
+    linear-gradient(
+      to bottom,
       black 0%,
-      rgba(145, 94, 49, 0.3) 30%, 
+      rgba(145, 94, 49, 0.3) 30%,
       rgba(76, 59, 143, 0.3) 70%,
       black 100%
     );
-
-  & * {
-    box-sizing: border-box;
-  }
 }
 
 a {
@@ -33,7 +34,7 @@ a {
   transition: color 125ms ease-in;
 
   &:hover {
-    color: white;
+    color: #FFF;
   }
 }
 
@@ -50,7 +51,7 @@ a {
     bottom: 0;
     text-align: center;
     font-size: 10px;
-    color: #30688b;
+    color: #30688B;
     opacity: 0.4;
 
     &::before {

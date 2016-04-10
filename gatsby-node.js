@@ -2,6 +2,18 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 exports.modifyWebpackConfig = function (config, env) {
+  config.preLoader('stylelint', {
+    test: /\.css$/,
+    loader: 'stylelint-loader',
+    exclude: /node_modules/,
+  });
+
+  config.preLoader('eslint', {
+    test: /\.js$/,
+    loader: "eslint-loader",
+    exclude: /node_modules/,
+  });
+
   config.removeLoader('jpg');
 
   config.loader('jpg', {
@@ -10,13 +22,13 @@ exports.modifyWebpackConfig = function (config, env) {
   });
 
   config.removeLoader('css');
-  var cssLoader = 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss';
+  var cssLoader = 'css?modules!postcss';
 
   if (env === 'static') {
     config.removeLoader('css');
     config.loader('css', function (cfg) {
       cfg.test = /\.css$/;
-      cfg.loader = ExtractTextPlugin.extract(cssLoader);
+      cfg.loader = ExtractTextPlugin.extract('style', cssLoader);
       return cfg;
     });
     config.plugin(
@@ -31,6 +43,16 @@ exports.modifyWebpackConfig = function (config, env) {
       return cfg;
     });
   }
+
+  config.merge({
+    postcss: [
+      require('postcss-import')(),
+      require('postcss-nested')(),
+      require('postcss-cssnext')({ browsers: 'last 2 versions' }),
+      require('postcss-browser-reporter'),
+      require('postcss-reporter'),
+    ],
+  })
 
   return config;
 };
