@@ -84,10 +84,10 @@ export default class Index extends Component {
             sets it as your profile picture for Twitter and Gravatar
           </p>
           <div className={css.fork}>
-            <a href="https://github.com/snapgit/snapgit">
+            <a target="_blank" href="https://github.com/snapgit/snapgit">
               <Button>
                 <Icon name="github" />
-                Fork on GitHub
+                Open on GitHub
               </Button>
             </a>
           </div>
