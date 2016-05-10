@@ -15,10 +15,11 @@ exports.modifyWebpackConfig = function (config, env) {
   });
 
   config.removeLoader('jpg');
+  config.removeLoader('png');
 
-  config.loader('jpg', {
-    test: /\.jpg$/,
-    loader: 'url-loader?limit=10000',
+  config.loader('jpg|png', {
+    test: /\.(png|jpg)$/,
+    loader: 'url?limit=8192',
   });
 
   config.removeLoader('css');
@@ -52,7 +53,7 @@ exports.modifyWebpackConfig = function (config, env) {
       require('postcss-browser-reporter'),
       require('postcss-reporter'),
     ],
-  })
+  });
 
   return config;
 };
